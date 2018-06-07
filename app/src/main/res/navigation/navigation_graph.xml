@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/actionDashboard">
+
+    <fragment
+        android:id="@+id/actionDashboard"
+        android:name="com.decano.navarch.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@string/dashboard" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/actionRoom"
+        android:name="com.decano.navarch.RoomFragment"
+        android:label="@string/room"
+        tools:layout="@layout/fragment_room">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@string/room" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/actionContact"
+        android:name="com.decano.navarch.ContactSupportFragment"
+        android:label="@string/contactSupport"
+        tools:layout="@layout/fragment_contact_support">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@string/contactSupport" />
+
+    </fragment>
+
+</navigation>
